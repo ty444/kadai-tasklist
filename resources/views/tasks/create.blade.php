@@ -7,9 +7,13 @@
    <div class="row">
         <div class="col-6">
             {!! Form::model($task,['route' => 'tasks.store']) !!}
-            
+                
+                <dev class ="form-group">
+                    {!! Form::label('status','ステータス :') !!}
+                    {!! FOrm::text('status',null,['class'=>'form-control']) !!}
+                </dev>
                 <div class="form-group">
-                    {!! Form::label('content','タスク:') !!}
+                    {!! Form::label('content','タスク :') !!}
                     {!! Form::text('content',null,['class' => 'form-control']) !!}
                 </div>
                 
